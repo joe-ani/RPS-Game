@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(56, 77, 86);
+    font-family:sans-serif;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.score{
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(182, 182, 182, 0.485);
+}
+
+h2{
+    margin-top: 0;
+}
+
+.vs{
+    color: rgb(152, 39, 39);
+}
+
+.game_container{
+    background: linear-gradient(to top, rgba(133, 133, 133, 0), rgba(124, 124, 124, 0.879));
+    border-radius: 10px;
+    padding: 25px;
+    height: 470px;
+    margin:  0 auto;
+    width: 50%;
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.game_container[data-animate='true']{
+    animation-name: shake;
+    animation-duration: 200ms;
+    animation-delay: 200ms;
+   
+}
+
+
+@keyframes shake {
+    0%{
+       transform: translateX(-10px);
+       
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+} 
+
+.play_option{
+    display: flex;
+    justify-content: space-between;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+}
+
+.new_game{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.new_game:hover{
+    background: rgba(182, 182, 182, 0.485);
+}
+
+.computer{
+    cursor: not-allowed;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: px;
+    transition: 300ms ease-in-out;
+
+    background: linear-gradient(to top, rgb(131, 121, 121), rgba(175, 226, 223, 0.412))
+}
+
+
+
+.select{
+   width: 115px;
+   height: 115px;
+   border-radius: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   font-size: 30px;
+   padding: px;
+   transition: 300ms ease-in-out;
+
+   background: linear-gradient(to top, rgb(131, 121, 121), rgba(175, 226, 223, 0.412))
+}
+
+.select:hover{
+    box-shadow: 0px 7px 10px rgba(43, 43, 43, 0.264);
+}
+
+.select:active{
+    box-shadow: 0px 0px 10px rgba(43, 43, 43, 0.062);
+}
+
+.computer_scissors[data-computer-scissors = 'true']{
+    background: linear-gradient(to top, rgb(182, 13, 13), rgba(175, 226, 223, 0.412))
+}
+
+
+
+.computer_paper[data-computer-paper = 'true']{
+    background: linear-gradient(to top, rgb(182, 13, 13), rgba(175, 226, 223, 0.412))
+
+}
+.computer_rock[data-computer-rock = 'true']{
+    background: linear-gradient(to top, rgb(182, 13, 13), rgba(175, 226, 223, 0.412))
+}

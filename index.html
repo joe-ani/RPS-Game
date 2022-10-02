@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Rock paper scissors with Javascript </h1>
+
+    <div data-shake-cont="false" class="game_container">
+       <div data-animate="false" class="options">
+        <div data-score="false" class="score">PLAY</div>
+        <div onclick="refresh()" class="new_game">Reset◀️</div>
+       </div>
+
+          <h2>Me🧠</h2>
+          <div class="play_option">
+            <div data-user-rock="false" class="select user_rock">
+                <p>🪨</p>
+            </div>
+            <div data-user-paper="false" class="select user_paper">
+                <p>📄</p>
+            </div>
+            <div data-user-scissors="false" class="select user_scissors">
+                <p>✂️</p>
+            </div>
+          </div>
+
+          <h1 class="vs" >VS</h1>
+          <h2>Computer🤖</h2>
+          <div class="play_option ">
+            <div data-computer-rock="false" class=" computer computer_rock">
+                <p>🪨</p>
+            </div>
+            <div data-computer-paper="false" class=" computer computer_paper">
+                <p>📄</p>
+            </div>
+            <div data-computer-scissors="false" class=" computer computer_scissors">
+                <p>✂️</p>
+            </div>
+          </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
